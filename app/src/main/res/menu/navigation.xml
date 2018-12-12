@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_characters"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Characters"/>
+
+    <!--item
+            android:id="@+id/navigation_planets"
+            android:icon="@drawable/ic_earth_globe"
+            android:title="Planets"/-->
+
+    <item
+            android:id="@+id/navigation_starships"
+            android:icon="@drawable/ic_starship"
+            android:title="Starships"/>
+    <!--item
+            android:id="@+id/navigation_vehicles"
+            android:icon="@drawable/ic_vehicle"
+            android:title="Vehicles"/-->
+    <item
+            android:id="@+id/navigation_species"
+            android:icon="@drawable/ic_specie"
+            android:title="Species"/>
+    <item
+            android:id="@+id/navigation_films"
+            android:icon="@drawable/ic_film"
+            android:title="Films"/>
+
+</menu>
