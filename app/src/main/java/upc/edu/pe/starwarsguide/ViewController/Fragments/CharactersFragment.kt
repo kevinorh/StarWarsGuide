@@ -53,15 +53,19 @@ class CharactersFragment : Fragment() {
             currentPage++
         }while(currentPage <= 9)
 
+
         return view
     }
 
     private fun handleResponse(response: CharactersResponse?) {
         characters.addAll(response!!.results!!)
+        characters.sortBy { it.name }
         Log.d("StarWarsGuide", "Found ${characters.size} characters")
         //println("Characters: $characters")
-        charactersAdapter.characters = characters
-        charactersAdapter.notifyDataSetChanged()
+        if(characters.size == response.count) {
+            charactersAdapter.characters = characters
+            charactersAdapter.notifyDataSetChanged()
+        }
     }
 
     private fun handleError(anError: ANError?) {
